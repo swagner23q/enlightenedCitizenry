@@ -1,0 +1,17 @@
+{{#md-navbar name='Enlightened Citizenry' class='teal'}}
+  <!-- A workaround to get the "active" class
+    to apply to the active <li> automatically -->
+  {{#link-to 'index' tagName='li'}}
+    {{link-to 'Home' 'index'}}
+  {{/link-to}}
+  {{#link-to 'legislator' tagName='li'}}
+    {{link-to 'Legislator Contact' 'legislator'}}
+  {{/link-to}}
+{{/md-navbar}}
+
+{{md-parallax image="assets/img/park.JPG"}}
+
+{{outlet}}
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}
