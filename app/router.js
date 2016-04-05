@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('legislator');
   this.route('legislatorsResults', {path: '/legislatorsResults/:zip'});
   this.route('house');
+  this.route('senate');
 });
 
 export default Router;
