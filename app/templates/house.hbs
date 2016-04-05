@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>House & Senate</h1>
+
+  <div class="row">
+    <div class="cols 6">
+      <h5>Current Committees of House</h5>
+      <ul>
+        {{#each model as |committee|}}
+          <li> <b>{{committee.name}}</b><br><br></li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="cols 6">
+      <h5>Current Committees of Senate</h5>
+      <ul>
+        {{#each model as |senate|}}
+          <li> <b>{{senate.name}}</b><br><br></li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

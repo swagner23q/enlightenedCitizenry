@@ -1,4 +1,4 @@
-{{#md-navbar name='Enlightened Citizenry' class='teal'}}
+{{#md-navbar name='Enlightened Citizenry' class='grey lighten-1'}}
   <!-- A workaround to get the "active" class
     to apply to the active <li> automatically -->
   {{#link-to 'index' tagName='li'}}
@@ -6,6 +6,9 @@
   {{/link-to}}
   {{#link-to 'legislator' tagName='li'}}
     {{link-to 'Legislator Contact' 'legislator'}}
+  {{/link-to}}
+  {{#link-to 'house' tagName='li'}}
+    {{link-to 'House & Senate' 'house'}}
   {{/link-to}}
 {{/md-navbar}}
 
