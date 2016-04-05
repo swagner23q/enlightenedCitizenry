@@ -1,6 +1,5 @@
 {{#md-navbar name='Enlightened Citizenry' class='grey lighten-1'}}
-  <!-- A workaround to get the "active" class
-    to apply to the active <li> automatically -->
+
   {{#link-to 'index' tagName='li'}}
     {{link-to 'Home' 'index'}}
   {{/link-to}}
@@ -12,6 +11,9 @@
   {{/link-to}}
   {{#link-to 'senate' tagName='li'}}
     {{link-to 'Senate Commitees' 'senate'}}
+  {{/link-to}}
+  {{#link-to 'bills' tagName='li'}}
+    {{link-to 'Bills' 'bills'}}
   {{/link-to}}
 {{/md-navbar}}
 

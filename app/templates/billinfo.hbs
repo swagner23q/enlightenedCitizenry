@@ -1,0 +1,19 @@
+<div class="container">
+  <h3><u>Bill Information</u></h3>
+
+  <div class="row">
+    <div class="col s12">
+      <ul>
+        {{#each model as |bill|}}
+        {{log bill}}
+          <li><b>Title:</b> "{{bill.short_title}}"</li>
+          <li><b>Description:</b> {{bill.official_title}}</li>
+          <li><b>Sponsor:</b> {{bill.sponsor.first_name}} {{bill.sponsor.last_name}} </li>
+          <li><b>Chamber:</b> {{bill.chamber}}</li>
+          <li><b>Introduced:</b> {{bill.introduced_on}}</li>
+          <br><br>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>

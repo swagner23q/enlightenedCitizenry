@@ -6,7 +6,8 @@
 
       <ul>
         {{#each model as |committee|}}
-          <li> <b>{{committee.name}}</b><br>
+        {{log committee}}
+          <li> <b>{{#link-to 'houseSub' committee.committee_id}} {{committee.name}} {{/link-to}}</b><br>
             &nbsp;&nbsp;&nbsp; Phone: {{committee.phone}}<br></li>
         {{/each}}
       </ul>

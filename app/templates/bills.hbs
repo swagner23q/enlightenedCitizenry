@@ -1,0 +1,14 @@
+<div class="container">
+  <h3><u>Current Bills</u></h3>
+
+  <div class="row">
+    <div class="col s12">
+
+      <ul>
+        {{#each model as |bill|}}
+          <li>{{#link-to 'billinfo' bill.bill_id}} {{bill.official_title}} {{/link-to}}</li><br><br>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
